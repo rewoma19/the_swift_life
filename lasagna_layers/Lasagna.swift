@@ -13,3 +13,9 @@ func remainingMinutesInOven(elapsedMinutes: Int) -> Int {
     let minsLeftInOven = expectedMinutesInOven - elapsedMinutes
     return minsLeftInOven
 }
+
+func preparationTimeInMinutes(layers: Int) -> Int {
+    let prepTimeInMins = layers * 2
+    return prepTimeInMins
+}
+

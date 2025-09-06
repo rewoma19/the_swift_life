@@ -15,3 +15,11 @@ Define the function **remainingMinutesInOven(elapsedMinutes:)** that takes the a
 
     remainingMinutesInOven(elapsedMinutes: 30)
     // Returns 10
+
+## Task 3: Calculate the preparation time in minutes
+
+Define the function **preparationTimeInMinutes(layers:)** that takes the arguments **layers** which holds the number of layers you added to the lasagna. The function should return how many minutes you spent preparing the lasagna, assuming each layer takes you 2 minutes to prepare.
+    
+    preparationTimeInMinutes(layers: 2)
+    // Returns 4
+
