@@ -19,3 +19,7 @@ func preparationTimeInMinutes(layers: Int) -> Int {
     return prepTimeInMins
 }
 
+func totalTimeInMinutes(layers: Int, elapsedMinutes: Int) -> Int {
+    let totalTimeInMins = preparationTimeInMinutes(layers: layers) + elapsedMinutes
+    return totalTimeInMins
+}

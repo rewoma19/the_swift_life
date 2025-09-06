@@ -23,3 +23,10 @@ Define the function **preparationTimeInMinutes(layers:)** that takes the argumen
     preparationTimeInMinutes(layers: 2)
     // Returns 4
 
+## Task 4: Calculate the total working time in minutes
+
+Define the function **totalTimeInMinutes(layers: elapsedMinutes)** that takes two arguments: the **layers** parameter, which is the number of layers you added to the lasagna, and the **elapsedMinutes** parameter, which is the number of minutes the lasagna has been in the oven. The function should return how many minutes in total you've worked on cooking the lasagna, which is the sum of the preparation time in minutes, and the time in minutes the lasagna has spent in the oven at the moment.
+
+    totalTimeInMinutes(layers: 3, elapsedMinutes: 20)
+    // Returns 26
+
