@@ -6,3 +6,5 @@
 //
 
 import Foundation
+
+let expectedMinutesInOven = 40
