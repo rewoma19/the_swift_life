@@ -22,3 +22,10 @@ Define the function **score(touchingPowerUp: touchingSeed:)** that takes two arg
     score(touchingPowerUp: true, touchingSeed: true)
     // Returns true
 
+## 3. Define if bird loses
+
+Define the function **lose(powerUpActive: touchingEagle:)** that takes two arguments **powerUpActive**, which holds if the bird has an active power-up, and the argument **touchingEagle** which holds if the bird is touching an eagle. The function should return **true** if the character is touching an eagle and does not have a power-up active, and return **false** otherwise.
+
+    lose(powerUpActive: false, touchingEagle: true)
+    // Returns true
+
