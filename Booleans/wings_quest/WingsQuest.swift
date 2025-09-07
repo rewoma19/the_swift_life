@@ -13,3 +13,7 @@ func lose(powerUpActive: Bool, touchingEagle: Bool) -> Bool {
     return playerLoses
 }
 
+func win(hasPickedUpAllSeeds: Bool, powerUpActive: Bool, touchingEagle: Bool) -> Bool {
+    let playerWins = hasPickedUpAllSeeds && !lose(powerUpActive: powerUpActive, touchingEagle: touchingEagle)
+    return playerWins
+}
