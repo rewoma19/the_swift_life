@@ -12,3 +12,13 @@ Define the function **bonusPoints(powerUpActive: touchingEagle:)** that takes tw
 
     bonusPoints(powerUpActive: false, touchingEagle: true)
     // Returns false
+
+## 2. Define if bird scores
+
+In the game, the player gets points when picking up a seed or a power-up.
+
+Define the function **score(touchingPowerUp: touchingSeed:)** that takes two arguments **touchingPowerUp**, which holds if the bird is touching a power-up, the argument **touchingSeed** which holds if the bird is touching a seed. The function should return **true** if the bird is touching a power-up or a seed, and return **false** otherwise.
+
+    score(touchingPowerUp: true, touchingSeed: true)
+    // Returns true
+
