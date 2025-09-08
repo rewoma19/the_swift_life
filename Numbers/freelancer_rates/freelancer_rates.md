@@ -22,3 +22,20 @@ Implement the function **monthlyRateFrom(hourlyRate:withDiscount:)**, that takes
     monthlyRateFromDiscount(hourlyRate: 77, withDiscount: 10.5)
     // Returns 12129
 
+## 3. Calculate the number of workdays given a budget, hourly rate and discount
+
+Another day, a project manager offers the freelancer to work on a project with a fixed budget. Given the fixed budget and the freelancer's hourly rate, help them calculate the number of days they would work until the budget is exhausted. Take into account that in this scenario, the freelancer is always willing to give the discount regardless of the number of days hired. The result must be **rounded down** to the nearest whole number.
+
+Implement the function **workdaysIn(budget:hourlyRate:withDiscount:)**, that takes the arguments:
+
+- **budget** which holds the budget for the project.
+
+- **hourlyRate** which holds the freelancers hourly rate.
+
+- **withDiscount** which holds the discount the freelancer is willing to give to the client.
+
+The function should return the number of workdays the freelancer will work on the project ronuded down.
+
+    workdaysIn(budget: 20000, hourlyRate: 80, withDiscount: 11.0)
+    // Returns 35.0
+
