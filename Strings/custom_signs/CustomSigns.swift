@@ -11,3 +11,5 @@ let birthday = "Birthday"
 let valentine = "Valentine's Day"
 let anniversary = "Anniversary"
 
+let space: Character = " "
+let exclamation: Character = " "

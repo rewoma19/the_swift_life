@@ -11,3 +11,10 @@ Define the following constant strings which will be used to create signs:
 
 - **anniversary**: This holds the string "Anniversary"
 
+## 2. Create a set of useful characters
+
+Define the following constant characters which will be used to create signs:
+- **space**: This holds the value " " (a single space)
+
+- **exclamation**: This holds the value "!"
+
