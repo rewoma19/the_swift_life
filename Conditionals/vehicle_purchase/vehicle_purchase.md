@@ -60,3 +60,18 @@ The function should return the following message based on the following conditio
     licenseType(numberOfWheels: 0)
     // returns "We do not issue licenses for those types of vehicles"
 
+## 3. Calculate an estimation for the price of a used vehicle
+
+    Now that you made your decision you want to make sure you get a fair price at the dealership. Since you are interested in buying a used vehicle, the price depends on how old the vehicle is. For a rough estimate, assume if the vehicle is less than 3 years old, it costs 80% of the original price it had when it was brand new. If it is at least 10 years old, it costs 50%. If the vehicle is at least 3 years old but not older than 10 years, it costs 70% of the original price.
+    
+    Implement the **calculateResellPrice(originalPrice:yearsOld:)** function that takes the arguments **originalPrice** which holds the vehicles original price, and **yearsOld** which holds the age of the vehicle in years. The function should return the resell price of the vehicle.
+    
+        calculateResellPrice(originalPrice: 1000, yearsOld: 1)
+        // returns 800
+        
+        calculateResellPrice(originalPrice: 1000, yearsOld: 5)
+        // returns 700
+        
+        calculateResellPrice(originalPrice: 1000, yearsOld: 15)
+        // returns 500
+

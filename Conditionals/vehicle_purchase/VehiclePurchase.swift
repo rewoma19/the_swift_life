@@ -38,3 +38,17 @@ func licenseType(numberOfWheels wheels: Int) -> String {
     return licenseMessage
 }
 
+func calculateResellPrice(originalPrice: Int, yearsOld: Int) -> Int {
+    var resellPrice: Double
+
+    if yearsOld < 3 {
+        resellPrice = 0.8 * Double(originalPrice)
+    } else if yearsOld >= 10 {
+        resellPrice = 0.5 * Double(originalPrice)
+    } else {
+        resellPrice = 0.7 * Double(originalPrice)
+    }
+
+    return Int(resellPrice)
+}
+
