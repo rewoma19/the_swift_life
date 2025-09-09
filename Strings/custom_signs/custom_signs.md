@@ -18,3 +18,13 @@ Define the following constant characters which will be used to create signs:
 
 - **exclamation**: This holds the value "!"
 
+## 3. Combine phrases to build up messages
+
+Implement the function **buildSign(for:name:)**, which takes the argument **for** which holds one of the three strings you defined in the first task and the argument **name** which is a string that holds the name of the person the sign is for. You shall use concatenation to build up the message for the sign and remember to reuse the already defined constants. The function should return the sign messsge as a string.
+
+    buildSign(for: birthday, name: "Otto")
+    // returns "Happy Birthday Otto!"
+
+    buildSign(for: anniversary, name: "Valentina")
+    // returns "Happy Anniversary Valentina!"
+

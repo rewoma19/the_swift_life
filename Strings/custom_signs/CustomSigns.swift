@@ -13,3 +13,13 @@ let anniversary = "Anniversary"
 
 let space: Character = " "
 let exclamation: Character = " "
+
+func buildSign(for occasion: String, name: String) -> String {
+    let signMessage = "Happy \(occasion) \(name)\(exclamation)"
+    return signMessage
+}
+
+// Test cases
+print(buildSign(for: birthday, name: "Otto"))
+print(buildSign(for: anniversary, name: "Valentina"))
+
