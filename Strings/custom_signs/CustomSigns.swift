@@ -31,3 +31,12 @@ func graduationFor(name: String, year: Int) -> String {
     return gradMessage
 }
 
+func costOf(sign: String) -> Int {
+    var costOfSign: Int = 20
+    
+    for letter in sign {
+        costOfSign += 2
+    }
+    
+    return costOfSign
+}

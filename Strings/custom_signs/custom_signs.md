@@ -35,3 +35,10 @@ Implement the function **graduationFor(name:year:)** which takes the argument **
     graduationFor(name: "Padma", year: 2023)
     // returns "Congratulations Padma!\nClass of 2023"
 
+## 5. Compute the cost of a sign
+
+Implement the function **costOf(sign:)** which takes the argument **sign** which is a string that holds the message for the sign. The sign has a base price of 20 in the given currency. Additionally each letter costs 2 (Whitespaces are included in the calculation). The function should return the cost as an integer.
+
+    costOf(sign: "Happy Birthday Grandma!")
+    // returns 66
+
