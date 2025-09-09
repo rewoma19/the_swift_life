@@ -28,3 +28,10 @@ Implement the function **buildSign(for:name:)**, which takes the argument **for*
     buildSign(for: anniversary, name: "Valentina")
     // returns "Happy Anniversary Valentina!"
 
+## 4. Build a graduation sign
+
+Implement the function **graduationFor(name:year:)** which takes the argument **name** which is a string that holds the name of the person the sign is for and the argument **year** which is an integer that holds the year the person is graduating. You shall use template strings to build up the message for the sign. The function should return the sign message as a string.
+
+    graduationFor(name: "Padma", year: 2023)
+    // returns "Congratulations Padma!\nClass of 2023"
+

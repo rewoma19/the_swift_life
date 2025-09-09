@@ -23,3 +23,11 @@ func buildSign(for occasion: String, name: String) -> String {
 print(buildSign(for: birthday, name: "Otto"))
 print(buildSign(for: anniversary, name: "Valentina"))
 
+func graduationFor(name: String, year: Int) -> String {
+    let gradMessage = """
+        Congratulations \(name)!
+        Class of \(year)
+        """
+    return gradMessage
+}
+
