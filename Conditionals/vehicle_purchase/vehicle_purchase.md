@@ -33,4 +33,30 @@ The function should return the following message based on the following conditio
     canIBuy(vehicle: "2020 Indian FTR 1200", price: 12_500, monthlyBudget: 200)
     // returns "I'll have to be frugal if I want a 2020 Indian FTR 1200"
 
+## 2. Determine the type of drivers license you will need
+
+You have decided to buy a used vehicle to determine what type of drivers license you will need to operate it.
+
+Implement the **licenseType(numberOfWheels:)** function that takes the argument **numberOfWheels** which is the number of wheels on the vehicle you want to buy.
+
+The function should return the following message based on the following conditions:
+- If the number of wheels is 2 or 3, return the message **"You will need a motorcyle license for your vehicle"**
+
+- If the number of wheels is 4 or 6, return the message **"You will need an automobile license for your vehicle"**
+
+- If the number of wheels is 18, return the message **"You will need a commercial trucking license for your vehicle"**
+
+- If the number is any other number, return the message **"We do not issue licenses for those types of vehicles"**
+
+    licenseType(numberOfWheels: 2)
+    // returns "You will need a motorcycle license for your vehicle"
+    
+    licenseType(numberOfWheels: 6)
+    // returns "You will need an automobile license for your vehicle"
+    
+    licenseType(numberOfWheels: 18)
+    // returns "You will need a commercial trucking license for your vehicle"
+    
+    licenseType(numberOfWheels: 0)
+    // returns "We do not issue licenses for those types of vehicles"
 

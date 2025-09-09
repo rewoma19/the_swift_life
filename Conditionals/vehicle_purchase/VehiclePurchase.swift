@@ -22,3 +22,19 @@ func canIBuy(vehicle: String, price: Double, monthlyBudget: Double) -> String {
     return message
 }
 
+func licenseType(numberOfWheels wheels: Int) -> String {
+    var licenseMessage: String
+    
+    if wheels == 2 || wheels == 3 {
+        licenseMessage = "You will need a motorcycle license for your vehicle"
+    } else if wheels == 4 || wheels == 6 {
+        licenseMessage = "You will need an automobile license for your vehicle"
+    } else if wheels == 18 {
+        licenseMessage = "You will need a commercial trucking license for your vehicle"
+    } else {
+        licenseMessage =  "We do not issue licenses for those types of vehicles"
+    }
+    
+    return licenseMessage
+}
+
