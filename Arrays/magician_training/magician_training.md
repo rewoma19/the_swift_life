@@ -37,3 +37,13 @@ Implement the function **insert(\_:atTopOf:)** that takes two arguments: the new
     insert(newCard, atTopOf: [5, 9, 7, 1])
     // returns [5, 9, 7, 1, 8]
 
+4. Remove a card from the stack
+
+Make a card disappear by removing the card of the given **position** from the stack.
+
+Implement the function **removeCard(at:from:)** that takes two arguments: **at**, which is the position of the card in the stack, and **from**, which is the stack of cards. The function should return a copy of the stack with the card at position **index** removed. If the given **index** is not a valid index in the stack, the original stack should be returned, unchanged.
+
+    let index = 2
+    removeCard(at: index, from: [3, 2, 6, 4, 8])
+    // returns [3, 2, 4, 8]
+

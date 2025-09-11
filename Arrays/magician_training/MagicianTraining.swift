@@ -31,3 +31,13 @@ func insert(_ newCard: Int, atTopOf stack: [Int]) -> [Int] {
     return newStack
 }
 
+func removeCard(at index: Int, from stack: [Int]) -> [Int] {
+    if index >= stack.count {
+        return stack
+    }
+    
+    var newStack = stack
+    newStack.remove(at: index)
+    return newStack
+}
+
