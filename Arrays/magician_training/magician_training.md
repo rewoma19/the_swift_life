@@ -47,3 +47,13 @@ Implement the function **removeCard(at:from:)** that takes two arguments: **at**
     removeCard(at: index, from: [3, 2, 6, 4, 8])
     // returns [3, 2, 4, 8]
 
+5. Insert a card in the stack
+
+Make a card appear by inserting a new card at the given **position** in the stack.
+
+Implement the function **insert(\_:at:from:)** that takes three arguments: the new card to be inserted, the position at which the new card should be inserted, and the stack of cards. The function should return a copy of the stack with the new card provided added at the given position. If the given **index** is not a valid index in the stack, the original stack should be returned, unchanged.
+
+    let newCard = 8
+    insert(newCard, at: 2, from: [5, 9, 7, 1])
+    // returns [5, 9, 8, 7, 1]
+
