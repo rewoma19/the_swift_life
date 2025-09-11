@@ -27,3 +27,13 @@ Implement the function **setCard(at:in:to)** that takes three arguments: **at** 
     setCard(at: index, in: [1, 2, 4, 1], to: newCard)
     // returns [1, 2, 6, 1]
 
+3. Insert a card at the top of the stack
+
+Make a card appear by inserting a new card at the top of the stack.
+
+Implement the function **insert(\_:atTopOf:)** that takes two arguments: the new card to be inserted, and the stack of cards. The function should returns a copy of the stack with the new card provided, added to the top of the stack.
+
+    let newCard = 8
+    insert(newCard, atTopOf: [5, 9, 7, 1])
+    // returns [5, 9, 7, 1, 8]
+
