@@ -57,3 +57,13 @@ Implement the function **insert(\_:at:from:)** that takes three arguments: the n
     insert(newCard, at: 2, from: [5, 9, 7, 1])
     // returns [5, 9, 8, 7, 1]
 
+6. Check size of the stack
+
+Check whether the size of the stack is equal to **stackSize** or not.
+
+Implement the function **checkSizeOfStack(\_:\_:)** that takes two arguments: **stack** which is the stack of cards, and **stackSize** which is the size of the stack. The function should return **true** if the size of the stack is equal to **stackSize** and **false** otherwise.
+
+    let stackSize = 4
+    checkSizeOfStack([3, 2, 6, 4, 8], stackSize)
+    // returns false
+
