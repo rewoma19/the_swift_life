@@ -16,3 +16,14 @@ Implement the function **getCard(at:from:)** that takes two arguments: **at** wh
     getCard(at: index, from: [1, 2, 4, 1])
     // returns 4
 
+2. Change a card in the stack
+
+Perform some sleight of hand and exchange the card at index **position** with the replacement card provided.
+
+Implement the function **setCard(at:in:to)** that takes three arguments: **at** which is the position of the card in the stack, **in**, which is the stack of cards, and **to**, which is the new card to replace the card at position at **index**. The function should return a copy of the stack with the card at position **index** replaced with the new card. If the given **index** is not a valid index in the stack, the original stack, the original stack should be returned, unchanged.
+
+    let index = 2
+    let newCard = 6
+    setCard(at: index, in: [1, 2, 4, 1], to: newCard)
+    // returns [1, 2, 6, 1]
+
