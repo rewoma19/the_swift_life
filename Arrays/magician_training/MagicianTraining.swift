@@ -22,10 +22,6 @@ func setCard(at index: Int, in stack: [Int], to newCard: Int) -> [Int] {
 }
 
 func insert(_ newCard: Int, atTopOf stack: [Int]) -> [Int] {
-    if index >= stack.count {
-        return stack
-    }
-    
     var newStack = stack
     newStack.append(newCard)
     return newStack
