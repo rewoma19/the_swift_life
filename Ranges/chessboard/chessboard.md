@@ -20,3 +20,12 @@ Define the **ranks** and **files** constants that store the range of ranks and f
     files 
     // Returns "A".."H"
 
+## 2. Check if square is valid
+
+The game will have to check if a square is valid. A square is valid if the rank and file are within the ranges of the ranks and files.
+
+Define the **isValidSquare(rank:file:)** method that takes the arguments **rank** that holds an **Int** of the rank and **file** that holds a **String** of the file. The method should return **true** if the rank and file are within the range of ranks and files, and return **false** otherwise.
+
+    isValidSquare(rank: 1, file: "A")
+    // returns true
+

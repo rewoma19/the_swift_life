@@ -9,3 +9,16 @@ import Foundation
 
 let ranks = 1...8
 let files = "A"..."H"
+
+func isValidSquare(rank: Int, file: String) -> Bool {
+    var isValid: Bool
+    
+    if ranks.contains(rank) && files.contains(file) {
+        isValid = true
+    } else {
+        isValid = false
+    }
+    
+    return isValid
+}
+
