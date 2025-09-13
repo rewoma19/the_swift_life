@@ -10,8 +10,8 @@ import Foundation
 func totalBirdCount(_ birdsPerDay: [Int]) -> Int {
     var totalNumOfBirds = 0
     
-    for _ in birdsPerDay {
-        totalNumOfBirds += 1
+    for bird in birdsPerDay {
+        totalNumOfBirds += bird
     }
     
     return totalNumOfBirds
