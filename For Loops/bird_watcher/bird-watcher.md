@@ -24,3 +24,19 @@ It returns the total number of birds that you counted in that specific week. You
     birdsInWeek(birdsPerDay, weekNumber: 2)
     // Returns 12
 
+## 3. Fix a counting mistake
+
+You realized that all the time you were trying to keep track of the birds, there was one bird that was hiding in a far corner of the garden.
+
+You figured out that this bird always spent every second day in your garden.
+
+You do not know exactly where it was in between those days but definitely not in your garden.
+
+Your bird watcher intuition also tells you that the bird was in your garden on the first day that you tracked in your list.
+
+Given this new information, write a function **fixBirdCountLog** that takes an array of birds counted per day as an argument and returns the array after correcting the counting mistake.
+
+    var birdsPerDay = [2, 5, 0, 7, 4, 1]
+    fixBirdCountLog(birdsPerDay)
+    // Returns [3, 5, 1, 7, 5, 1]
+

@@ -33,3 +33,16 @@ func birdsInWeek(_ birdsPerDay: [Int], weekNumber: Int) -> Int {
     return totalBirdsInWeek
 }
 
+func fixBirdCountLog(_ birdsPerDay: [Int]) -> [Int] {
+    var allBirds: [Int] = birdsPerDay
+    allBirds[0] += 1
+  
+    for i in 1..<allBirds.count {
+        if i.isMultiple(of: 2) {
+          allBirds[i] += 1
+        }
+    }
+
+    return allBirds
+}
+
