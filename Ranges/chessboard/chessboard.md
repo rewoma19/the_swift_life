@@ -29,3 +29,13 @@ Define the **isValidSquare(rank:file:)** method that takes the arguments **rank*
     isValidSquare(rank: 1, file: "A")
     // returns true
 
+## 3. Get row
+
+The game will store all the squares of the board in a single dimensional array. The squares are formed as a string of the rank and file, e.g "1A", "8B", "4G", etc. To get the row of a square, the game will have to calculate the index of the first square of the row.
+
+Define the **getRow(rank:)** method that takes the argument **rank** that holds an **Int** of the rank. The method should return an array of strings that represent the squares of the row.
+
+    let board = ["1A", "1B", "1C", "1D", "1E", "1F", "1G", "1H", "2A", ..., "8H"]
+    getRow(board, rank: 1)
+    // Returns ["1A", "1B", "1C", "1D", "1E", "1F", "1G", "1H"]
+

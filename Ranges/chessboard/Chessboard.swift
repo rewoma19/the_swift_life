@@ -22,3 +22,8 @@ func isValidSquare(rank: Int, file: String) -> Bool {
     return isValid
 }
 
+func getRow(_ board: [String], rank: Int) -> [String] {
+    let row: [String] = board.filter{ $0.hasPrefix(String(rank)) }
+    return row
+}
+
