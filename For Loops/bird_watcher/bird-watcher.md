@@ -12,3 +12,15 @@ Implement a function **totalBirdCount** that accepts an array of **Int**s that c
     totalBirdCount(birdsPerDay)
     // Returns 34
 
+## 2. Calculate the total number of visiting birds in a specific week
+
+Now that you got a general feel for your bird count numbers, you want to make a more fine-grained analysis.
+
+Implement a function **birdsInWeek** that accepts an array of bird counts per day and a week number.
+
+It returns the total number of birds that you counted in that specific week. You can assume weeks are always tracked completely.
+
+    let birdsPerDay = [2, 5, 0, 7, 4, 1, 3, 0, 2, 5, 0, 1, 3, 1]
+    birdsInWeek(birdsPerDay, weekNumber: 2)
+    // Returns 12
+

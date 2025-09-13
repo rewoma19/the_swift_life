@@ -16,3 +16,20 @@ func totalBirdCount(_ birdsPerDay: [Int]) -> Int {
     
     return totalNumOfBirds
 }
+
+func birdsInWeek(_ birdsPerDay: [Int], weekNumber: Int) -> Int {
+    
+    let weeks = stride(from: 0, to: birdsPerDay.count, by: 7).map {
+        Array(birdsPerDay[$0..<min($0 + 7, birdsPerDay.count)])
+    }
+    
+    var totalBirdsInWeek = 0
+    let birdsForTheWeek = weeks[weekNumber - 1]
+    
+    for bird in birdsForTheWeek {
+        totalBirdsInWeek += bird
+    }
+    
+    return totalBirdsInWeek
+}
+
