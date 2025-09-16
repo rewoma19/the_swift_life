@@ -12,3 +12,8 @@ func getName(_ item: (name: String, amount: Int)) -> String {
     return nameOfToy
 }
 
+func createToy(name: String, amount: Int) -> (name: String, amount: Int) {
+    let newToy: (String, Int) = (name, amount)
+    return newToy
+}
+
