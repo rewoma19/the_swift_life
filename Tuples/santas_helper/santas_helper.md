@@ -37,3 +37,21 @@ You can assume that they toy is already in the database, and don't need to check
     updateQuantity(toys, toy: "Doll", amount: 15)
     // Returns [(name: "Doll", quantity: 15), (name: "Car", quantity: 5), (name: "Train", quantity: 3)]
 
+## 4. Add category key to a toy
+
+Santa wants to be able to categorize the toys in the database. This is so they can easily find the toys when they need to make a delivery, and to be able to sort the toys in the database.
+
+However, when the system was first implemented, the category key was forgotten. Now the system needs to be able to add a category key to a toy in the database.
+
+Implement the function **addCategory(\_:category:)**, that takes the arguments:
+
+- **toys** which holds an array of tuples of type (name: String, quantity: Int).
+
+- **category** which holds the category key to add to the toys.
+
+You can assume that the toy is already in the database, and don't need to check for that. You can also assume that there is no category key already in the toy.
+
+    let toys = [(name: "Car", quantity: 5), (name: "Train", quantity: 3)]
+    addCategory(toys,, category: "Vehicle")
+    // Returns [(name: "Car", quantity: 5, category: "Vehicle"), (name: "Train", quantity: 3, category: "Vehicle")]
+

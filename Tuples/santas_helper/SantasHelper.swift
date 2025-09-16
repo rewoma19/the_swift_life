@@ -30,3 +30,12 @@ func updateQuantity(_ items: [(name: String, amount: Int)], toy: String, amount:
     return updatedItems
 }
 
+func addCategory(_ items: [(name: String, amount: Int), category: String] -> [(name: String, amount: Int, category: String)] {
+    let itemsWithCategories: [(String, Int, String)] = items.map {
+        item in
+        return (name: item.name, amount: item.amount, category: category)
+    }
+    
+    return itemsWithCategories
+}
+
