@@ -17,3 +17,16 @@ func createToy(name: String, amount: Int) -> (name: String, amount: Int) {
     return newToy
 }
 
+func updateQuantity(_ items: [(name: String, amount: Int)], toy: String, amount: Int) -> [(name: String, amount: Int)] {
+    let updatedItems: [(String, Int)] = items.map {
+        item in
+        if item.name == toy {
+            return (name: item.name, amount: amount)
+        } else {
+            return item
+        }
+    }
+    
+    return updatedItems
+}
+

@@ -19,3 +19,21 @@ Implement the function **createToy(name:amount)**, that takes an argument **name
     getName(name: "Doll", quantity: 10)
     // Returns (name: "Doll", quantity: 10)
 
+## 3. Update quantity of a toy
+
+The elfs in santas workshop are constantly making more toys, and santa needs to keep track of the quantity of each toy. To do this, the system needs to be able to update the quantity of a toy in the database.
+
+Implement the function **updateQuantity(\_:toy:Amount:)**, that takes the arguments:
+
+- **toys** which holds an array of tuples of type **(name: String, quantity: Int)**
+
+- **toy** which holds the name of the toy to update.
+
+- **amount** which holds the new quantity of the toy.
+
+You can assume that they toy is already in the database, and don't need to check for that.
+
+    let toys = [(name: "Doll", quantity: 10), (name: "Car", quantity: 5), (name: "Train", quantity: 3)]
+    updateQuantity(toys, toy: "Doll", amount: 15)
+    // Returns [(name: "Doll", quantity: 15), (name: "Car", quantity: 5), (name: "Train", quantity: 3)]
+
