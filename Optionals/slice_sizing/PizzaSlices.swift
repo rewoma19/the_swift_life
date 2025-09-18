@@ -16,6 +16,10 @@ func sliceSize(diameter: Double?, slices: Int?) -> Double? {
         return nil
     }
     
+    guard unwrappedDiameter >= 0 else {
+        return nil
+    }
+    
 //    Use guard statement to check that there is at least 1 slice, so we do not divide by 0 and get an error from doing so.
 //    So if slices was not nil, but is less than 1, nil will still be returned and we exit early
     guard unwrappedSlices > 0 else {
@@ -29,4 +33,35 @@ func sliceSize(diameter: Double?, slices: Int?) -> Double? {
     let sliceArea = pizzaArea / Double(unwrappedSlices)
     
     return sliceArea
+}
+
+func biggestSlice(diameterA: String, slicesA: String, diameterB: String, slicesB: String) -> String {
+    let doubleDiameteraA = Double(diameterA)
+    let doubleDiameterB = Double(diameterB)
+    
+    let intSlicesA = Int(slicesA)
+    let intSlicesB = Int(slicesB)
+    
+    let areaOfSliceA = sliceSize(diameter: doubleDiameterA, slices: intSlicesA)
+    let areaOfSliceB = sliceSize(diameter: doubleDiameterB, slices: intSlicesB)
+    
+//    If areaOfSlice A is not nil, unwrap it into variable a, same for areaOfSliceB
+    if let a = areaOfSliceA, areaOfSliceB == nil {
+        return "Slice A is bigger"
+//        if areaOfsliceB is not nil, unwrap it into variable b. Also check if areaOfSliceA is nil
+    } else if areaOfSliceA == nil, let b = areaOfSliceB {
+        return "Slice B is bigger"
+//        unwrap areaOfSliceA and areaOfSliceb into varialbles a and b if they aren't nil
+    } else if let a = areaOfSliceA, let b = areaOfSliceB {
+        if a > b {
+            return "Slice A is bigger"
+        } else if b > a {
+            return "Slice B is bigger"
+        } else {
+            return "Neither slice is bigger"
+        }
+//        if both a and b are nil
+    } else {
+        return "Neither slice is bigger"
+    }
 }
