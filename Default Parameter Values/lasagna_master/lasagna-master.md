@@ -37,3 +37,13 @@ Define the function **quantities** that takes a variadic **String** parameter, *
     quantities(layers: "sauce", "noodles", "sauce", "noodles", "meat", "noodles", "mozzarella")
     // Returns (noodles: 9, sauce: 0.4)
 
+## 4. Convert liters to fluid ounces in place
+
+Unfortunately, the sauce you have on hand has the volume listed in fluid ounces instead of liters. To help let you know if you have enough sauce on hand, write a function **toOz**, that takes an in-out tuple parameter, **(noodles: Int, sauce: Double)**, and converts the quantity of sauce to fluid ounces. Note that there are 33.814 fluid ounces per liter.
+
+    var amount = (noodles: 9, sauce: 0.8)
+    toOz(&amount)
+
+    amount
+    // Returns (noodles: 9, sauce: 27.0512)
+

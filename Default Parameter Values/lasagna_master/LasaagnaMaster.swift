@@ -37,3 +37,8 @@ func quantities(layers: String...) -> (noodles: Int, sauce: Double) {
     return (noodles: noodlesNeeded, sauce: saucesNeeded)
 }
 
+func toOz(_ amount: inout (noodles: Int, sauce: Double)) -> (noodles: Int, sauce: Double) {
+    amount.sauce *= 33.814
+    return amount
+}
+
