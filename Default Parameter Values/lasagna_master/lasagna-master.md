@@ -14,3 +14,15 @@ To clean things up, define the **remainingMinutesInOven** function that takes th
     // Returns 10
     remainingMinutesInOven(elapsedMinutes: 30, expectedMinutesInOven: 75)
     // Returns 45
+
+## 2. Allow differing numbers of layers
+
+You had a previously written **preparationTimeInMinutes** function that takes the number of layers you added to the lasagna as a parameter and returns how many minutes you spent preparing the lasagna, assuming each layer takes you 2 minutes to prepare. However, you are not particularly happy with this function, as you have to count the number of layers in your lasagna yourself before you can call this function, and who has time for all that?
+
+To make things easier for yourself, write a function, **preparationTimeInMinutes** that takes a variadic **String** parameter, **layers**, where you list the different layers in your lasagna. The function will then count the number of layers in your lasagna, and return the amount of preparation time required.
+
+    preparationTimeInMinutes(layers: "sauce", "noodles")
+    // Returns 4
+    preparationTimeInMinutes(layers: "sauce", "noodles", "sauce", "meat", "mozzarella", "noodles", "sauce", "eggplant", "béchamel", "noodles", "sauce", "mozzarella")
+    // Returns 24
+

@@ -12,3 +12,13 @@ func remainingMinutesInOven(elapsedMinutes: Int, expectedMinutesInOven: Int = 40
     return minsLeftInOven
 }
 
+func preparationTimeInMinutes(layers: String...) -> Int {
+    var prepTimeInMins = 0
+    
+    for _ in layers {
+        prepTimeInMins += 2
+    }
+    
+    return prepTimeInMins
+}
+
