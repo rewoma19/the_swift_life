@@ -22,3 +22,18 @@ func preparationTimeInMinutes(layers: String...) -> Int {
     return prepTimeInMins
 }
 
+func quantities(layers: String...) -> (noodles: Int, sauce: Double) {
+    var noodlesNeeded = 0
+    var saucesNeeded: Double = 0
+    
+    for layer in layers {
+        if layer == "noodles" {
+            noodlesNeeded += 3
+        } else if layer == "sauce" {
+            saucesNeeded += 0.2
+        }
+    }
+    
+    return (noodles: noodlesNeeded, sauce: saucesNeeded)
+}
+

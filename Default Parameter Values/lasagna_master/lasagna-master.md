@@ -26,3 +26,14 @@ To make things easier for yourself, write a function, **preparationTimeInMinutes
     preparationTimeInMinutes(layers: "sauce", "noodles", "sauce", "meat", "mozzarella", "noodles", "sauce", "eggplant", "béchamel", "noodles", "sauce", "mozzarella")
     // Returns 24
 
+## 3. Compute amounts of noodles and sauce
+
+Before you start to assemble your lasagna, you want to make sure you have enough sauce and noodles to build the lasagna of your dreams. For each noodle layer in your lasagna, you will need 3 noodles. For each sauce layer in your lasagna, you will need 0.2 liters of sauce.
+
+Define the function **quantities** that takes a variadic **String** parameter, **layers**, where you list the different layers in your lasagna. The function will then determine the quantity of noodles and sauce needed to make your meal. The result should be returned in a tuple of type **(noodles: Int, sauce: Double)**.
+
+    quantities(layers: "sauce", "noodles", "sauce", "meat", "mozzarella", "noodles", "sauce", "eggplant", "béchamel", "noodles", "sauce", "mozzarella")
+    // Returns (noodles: 9, sauce: 0.8)
+    quantities(layers: "sauce", "noodles", "sauce", "noodles", "meat", "noodles", "mozzarella")
+    // Returns (noodles: 9, sauce: 0.4)
+
