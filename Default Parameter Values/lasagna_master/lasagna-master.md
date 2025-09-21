@@ -47,3 +47,12 @@ Unfortunately, the sauce you have on hand has the volume listed in fluid ounces 
     amount
     // Returns (noodles: 9, sauce: 27.0512)
 
+## 5. Determine the best wine to serve
+
+Finally, you want to know what kind of wine to serve with your lasagna. You've heard that you should serve white wine if there is more mozzarella, ricotta, and béchamel in the lasagna than there is meat and sauce, and red wine otherwise. Write a function **redWine** that takes a variadic **String** parameter, **layers**, where you list the different layers in your lasagna. The function will use five nested functions to determine the number of layers of mozzarella, ricotta, béchamel, sauce, and meat in the lasagna, and compare the number of layers to determine if red wine should be served, returning **true** if so and **false** if not.
+
+    redWine(layers: "sauce", "noodles", "sauce", "meat", "mozzarella", "noodles", "sauce", "eggplant", "béchamel", "noodles", "sauce", "mozzarella")
+    // Returns true
+    redWine(layers: "sauce", "noodles", "béchamel", "meat", "mozzarella", "noodles", "ricotta", "eggplant", "béchamel", "noodles", "sauce", "mozzarella")
+    // Returns false
+

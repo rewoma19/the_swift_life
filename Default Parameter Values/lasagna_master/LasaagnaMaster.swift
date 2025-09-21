@@ -42,3 +42,28 @@ func toOz(_ amount: inout (noodles: Int, sauce: Double)) -> (noodles: Int, sauce
     return amount
 }
 
+func redWine(layers: String...) -> Bool {
+    
+    func numOfIngredient(_ ingredient: String) -> Int {
+        var ingredientNum = 0
+        
+        for layer in layers {
+            if layer == ingredient {
+                ingredientNum += 1
+            }
+        }
+        
+        return ingredientNum
+    }
+    
+    let numOfMozz: Int = numOfIngredient("mozzarella")
+    let numOfRicotta: Int = numOfIngredient("ricotta")
+    let numOfBechamel: Int = numOfIngredient("béchamel")
+    let numOfMeat: Int = numOfIngredient("meat")
+    let numOfSauce: Int = numOfIngredient("sauce")
+    
+    let numOfVeggies = numOfMozz + numOfRicotta + numOfBechamel
+    let numOfMeatAndSauce = numOfMeat + numOfSauce
+    
+    return numOfMeatAndSauce >= numOfVeggies
+}
