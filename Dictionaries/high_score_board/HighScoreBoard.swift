@@ -24,3 +24,7 @@ func resetScore(_ scores: inout [String: Int], _ name: String) {
     scores[name]? = 0
 }
 
+func updateScore(_ scores: inout [String: Int], _ name: String, _ delta: Int) {
+    scores[name]? += delta
+}
+

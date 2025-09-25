@@ -54,3 +54,18 @@ The function will set the score of the player to 0. If the player is not in the 
     resetScore(&highScores, "Dave Thomas")
     // Returns ["Dave Thomas": 0, "José Valim": 10]
 
+## 5. Update a player's score
+
+To update a player's score by adding to the previous score, define **updateScore**, which takes 3 parameters:
+
+- The first parameter is the dictionary of scores. This should be an in-out parameter.
+
+- The second parameter is the name of the player as a string, whose score you wish to update.
+
+- The third parameter is the score that you wish to add to the stored high score.
+
+    var highScores = ["Dave Thomas": 0, "José Valim": 486_373]
+    addPlayer(&highScores, "Freyja Ćirić", 12_771_008)
+    updateScore(&highscores, "Freyja Ćirić", 73)
+    // Returns ["Dave Thomas": 0, "José Valim": 486_373, "Freyja Ćirić": 73]
+
