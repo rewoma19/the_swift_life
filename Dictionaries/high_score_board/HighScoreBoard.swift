@@ -39,3 +39,13 @@ func orderByPlayers(_ scores: [String: Int]) -> [(String, Int)] {
     return scores.sorted(by: nameSort)
 }
 
+func orderByScores(_ scores: [String: Int]) -> [(String, Int)] {
+    func scoreSort(_ lhs: (String, Int), _ rhs: (String, Int)) -> Bool {
+        let left = lhs.1
+        let right = rhs.1
+        
+        return right < left
+    }
+    
+    return scores.sorted(by: scoreSort)
+}

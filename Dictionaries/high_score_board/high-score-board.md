@@ -81,3 +81,14 @@ The function will return an array of **(String, Int)** tuples that are the playe
     orderByPlayers(highScores)
     // Returns [("Dave Thomas", 0), ("Freyja Ćirić", 12_771_091), ("José Valim", 486_373)]
 
+## 7. Get a list of players ordered by player score in decreasing order
+
+To get a list of players ordered by scores in decreasing order, define **orderByScores**, which takes 1 parameter:
+
+- The first parameter is the dictionary of scores.
+
+The function will return an array of **(String, Int)** tuples that are the players and their high scores sorted in descending order by the player's score.
+
+    var highScores = ["Dave Thomas": 0, "José Valim": 486_373, "Freyja Ćirić": 12_771_091]
+    orderByScores(highScores)
+    // Returns [("Freyja Ćirić", 12_771_091), ("José Valim", 486_373), ("Dave Thomas", 0)]
