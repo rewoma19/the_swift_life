@@ -11,3 +11,8 @@ func newScoreBoard() -> [String: Int] {
     let newScoreBoard = [String: Int]()
     return newScoreBoard
 }
+
+func addPlayer(_ scores: inout [String: Int], _ name: String, _ score: Int = 0) {
+    scores[name] = score
+}
+
