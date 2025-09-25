@@ -69,3 +69,15 @@ To update a player's score by adding to the previous score, define **updateScore
     updateScore(&highscores, "Freyja Ćirić", 73)
     // Returns ["Dave Thomas": 0, "José Valim": 486_373, "Freyja Ćirić": 73]
 
+## 6. Get a list of players with scores ordered by player name
+
+Define the function **orderByPlayers**, which takes 1 parameter:
+
+- The first parameter is the dictionary of scores.
+
+The function will return an array of **(String, Int)** tuples that are the players and their high scores sorted in ascending order by the player's name.
+
+    var highScores = ["Dave Thomas": 0, "José Valim": 486_373, "Freyja Ćirić": 12_771_091]
+    orderByPlayers(highScores)
+    // Returns [("Dave Thomas", 0), ("Freyja Ćirić", 12_771_091), ("José Valim", 486_373)]
+

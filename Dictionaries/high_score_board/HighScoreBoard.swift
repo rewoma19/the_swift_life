@@ -28,3 +28,14 @@ func updateScore(_ scores: inout [String: Int], _ name: String, _ delta: Int) {
     scores[name]? += delta
 }
 
+func orderByPlayers(_ scores: [String: Int]) -> [(String, Int)] {
+    func nameSort(_ lhs: (String, Int), _ rhs: (String, Int)) -> Bool {
+        let left = lhs.0
+        let right = rhs.0
+        
+        return left < right
+    }
+    
+    return scores.sorted(by: nameSort)
+}
+
