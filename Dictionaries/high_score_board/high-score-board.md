@@ -24,3 +24,19 @@ To add a player to the high score dictionary, define **addPlayer(\_:\_:\_)**, wh
     addPlayer(&highScores, "José Valim", 486_373)
     // Returns ["Dave Thomas": 0, "José Valim": 486_373]
 
+## 3. Remove players from the score dictionary
+
+To remove a player from the high score dictionary, define **removePlayer(\_:\_:)**, which takes 2 parameters:
+
+- The first parameter is the dictionary of scores. This should be an in-out parameter.
+
+- The second parameter is the name of the player as a string.
+
+This function should remove the player from the dictionary if they are in it and do nothing otherwise.
+
+    var highScores = ["Dave Thomas": 0, "José Valim": 486_373]
+    removePlayer(&highScores, "Dave Thomas")
+    // Returns ["José Valim": 486_373]
+    removePlayer(&highScores, "Rose Fanaras")
+    // Returns ["José Valim": 486_373]
+

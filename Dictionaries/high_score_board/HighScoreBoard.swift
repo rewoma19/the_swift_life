@@ -16,3 +16,7 @@ func addPlayer(_ scores: inout [String: Int], _ name: String, _ score: Int = 0) 
     scores[name] = score
 }
 
+func removePlayer(_ scores: inout [String: Int], _ name: String) {
+    scores.removeValue(forKey: name)
+}
+
