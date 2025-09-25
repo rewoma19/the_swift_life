@@ -40,3 +40,17 @@ This function should remove the player from the dictionary if they are in it and
     removePlayer(&highScores, "Rose Fanaras")
     // Returns ["José Valim": 486_373]
 
+## 4. Reset a player's score
+
+To reset a player's score, define **resetPlayer(\_:\_:)**, which takes 2 parameters:
+
+- The first parameter is the dictionary of scores. This should be an in-out parameter.
+
+- The second parameter is the name of the player as a string, whose score you wish to reset.
+
+The function will set the score of the player to 0. If the player is not in the dictionary, then nothing should happen.
+
+    var highScores = ["Dave Thomas": 486_373, "José Valim": 10]
+    resetScore(&highScores, "Dave Thomas")
+    // Returns ["Dave Thomas": 0, "José Valim": 10]
+

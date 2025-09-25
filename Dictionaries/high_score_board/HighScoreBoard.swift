@@ -20,3 +20,7 @@ func removePlayer(_ scores: inout [String: Int], _ name: String) {
     scores.removeValue(forKey: name)
 }
 
+func resetScore(_ scores: inout [String: Int], _ name: String) {
+    scores[name]? = 0
+}
+
