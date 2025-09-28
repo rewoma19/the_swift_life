@@ -59,7 +59,7 @@ func makeWedges(needed: Int, limes: [String]) -> Int {
 }
 
 func finishShift(minutesLeft: Double, remainingOrders: [[String]]) -> [[String]] {
-    var minsLeftInShift = minutesLeft
+    var minsLeftInShift = Double(minutesLeft)
     var ordersLeft = remainingOrders
     
     while minsLeftInShift > 0 && !ordersLeft.isEmpty {
@@ -78,3 +78,27 @@ func finishShift(minutesLeft: Double, remainingOrders: [[String]]) -> [[String]]
     return ordersLeft
 }
 
+func orderTracker(orders: [(drink: String, time: String)]) -> (beer: (first: String, last: String, total: Int)?, soda: (first: String, last: String, total: Int)?) {
+    let beerOrders = orders.filter{ $0.drink == "beer" }
+    let sodaOrders = orders.filter{ $0.drink == "soda" }
+    
+    let beerTracker: (first: String, last: String, total: Int)?
+    
+    if let first = beerOrders.first, let last = beerOrders.last {
+        beerTracker = (first: first.time, last: last.time, total: beerOrders.count)
+    } else {
+        beerTracker = nil
+    }
+    
+    let sodaTracker: (first: String, last: String, total: Int)?
+    
+    if let first = sodaOrders.first, let last = sodaOrders.last {
+        sodaTracker = (first: first.time, last: last.time, total: sodaOrders.count)
+    } else {
+        sodaTracker = nil
+    }
+
+    
+    return (beer: beerTracker, soda: sodaTracker)
+
+}

@@ -59,5 +59,5 @@ Implement the function **orderTracker(orders:)** which takes in an array of tupl
 
     orderTracker(orders: orders)
 
-    // returnsa (beer: (first "10:01", last "10:22", total 3), soda: (first "10:09", last "10:09", total 1))
+    // returns (beer: (first: "10:01", last: "10:22", total: 3), soda: (first: "10:09", last: "10:09", total: 1))
 
