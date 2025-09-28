@@ -29,3 +29,32 @@ func timeToPrepare(drinks: [String]) -> Double {
     
     return prepTimeInMins
 }
+
+func makeWedges(needed: Int, limes: [String]) -> Int {
+    var numOfLimesCut: Int = 0
+    var wedges: Int
+    var wedgesNeeded: Int = needed
+    
+    for lime in limes {
+        if wedgesNeeded <= 0 {
+            break
+        }
+        
+        switch lime {
+        case "small":
+            wedges = 6
+        case "medium":
+            wedges = 8
+        case "large":
+            wedges = 10
+        default:
+            wedges = 0
+        }
+        
+        numOfLimesCut += 1
+        wedgesNeeded -= wedges
+    }
+    
+    return numOfLimesCut
+}
+
