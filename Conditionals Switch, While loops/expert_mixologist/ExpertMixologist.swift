@@ -58,3 +58,23 @@ func makeWedges(needed: Int, limes: [String]) -> Int {
     return numOfLimesCut
 }
 
+func finishShift(minutesLeft: Double, remainingOrders: [[String]]) -> [[String]] {
+    var minsLeftInShift = minutesLeft
+    var ordersLeft = remainingOrders
+    
+    while minsLeftInShift > 0 && !ordersLeft.isEmpty {
+        let currentOrder = ordersLeft[0]
+        let prepTime = timeToPrepare(drinks: currentOrder)
+        
+        if prepTime <= minsLeftInShift {
+            minsLeftInShift -= prepTime
+            ordersLeft.removeFirst()
+        } else {
+            ordersLeft.removeFirst()
+            break
+        }
+    }
+    
+    return ordersLeft
+}
+
