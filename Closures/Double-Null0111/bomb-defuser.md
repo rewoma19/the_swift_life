@@ -17,3 +17,12 @@ It is important to note that the type has to be the **ChangeClosure** (or a send
     flip(("red", "yellow", "blue"))
     // Returns ("yellow", "red", "blue")
 
+## 2, Write a closure to rotate the wires
+
+Write a closure that takes a **(String, String, String) tuple and returns the tuple with the order of the wires rotated to the left. Assign this closure to the name **rotate**.
+
+It is important to note that the type has to be the **ChangeClosure**(or a sendable type), the type definition is given in the stub file.
+
+    rotate(("red", "yellow", "blue"))
+    // Returns ("yellow", "blue", "red")
+

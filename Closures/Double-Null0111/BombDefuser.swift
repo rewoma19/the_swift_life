@@ -14,3 +14,8 @@ let flip: ChangeClosure = { tuple in
     return (b, a, c)
 }
 
+let rotate: ChangeClosure = { tuple in
+    let (a, b, c) = tuple
+    return (b, c, a)
+}
+
