@@ -19,3 +19,16 @@ let rotate: ChangeClosure = { tuple in
     return (b, c, a)
 }
 
+func makeShuffle(flipper: @escaping ((String, String, String)) -> (String, String, String),
+                 rotator: @escaping ((String, String, String)) -> (String, String, String)
+) -> ([UInt8], (String, String, String)) -> (String, String, String) {
+    return { bits, wires in
+        var result = wires
+        
+        for bit in bits.reversed() {
+            result = bit == 0 ? flipper(result) : rotator(result)
+        }
+        
+        return result
+    }
+}
