@@ -17,3 +17,13 @@ struct Size {
     }
 }
 
+struct Position {
+    var x: Int = 0
+    var y: Int = 0
+    
+    mutating func moveTo(newX: Int, newY: Int) {
+        x = newX
+        y = newY
+    }
+}
+

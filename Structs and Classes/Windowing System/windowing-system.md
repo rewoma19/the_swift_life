@@ -4,7 +4,7 @@ In this exercise, you will be simulating a windowing based computer system. You 
 
 ![Windowing-system]('/Images/windowing-system.png')
 
-1. Define a Size Struct
+## 1. Define a Size Struct
 
 Define a struct named **Size** with two **Int** properties, **width** and **height** that store the window's current width and height, respectively. The initial width and height should be 80 and 60, respectively. Include a method **resize(newWidth:newHieght:)** that takes new width and height parameters and changes the properties to reflect the new size.
 
@@ -17,4 +17,17 @@ Define a struct named **Size** with two **Int** properties, **width** and **heig
     size1200x800.resize(newWidth: 1200, newHeight: 800)
     size1200x800.height
     // Returns 800
+
+## 2. Define a Position Struct
+
+Define a struct named **Position** with two **Int** properties, **x** and **y** that store the current horizontal and vertical position, respectively, of the window's upper left corner. The initial values of x and y should each be 0. The position (0,0) is the upper left corner of the screen with **x** values getting larger as you move right and **y** values getting larger as you move down.
+
+Include a method **moveTo(newX:newT:)** that takes new x and y parameters and changes the properties to reflect the new position.
+
+    var point = Position(x: 10, y: 20)
+    // Returns Position
+    
+    point.moveTo(newX: 100, newY: -100)
+    point.y
+    // Returns -100
 
